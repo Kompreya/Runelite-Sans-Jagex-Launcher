@@ -48,6 +48,7 @@ Warning: Before you proceed, please note that the credentials you are obtaining 
   a) Copy the env variable values obtained from step 3 to the script, into their relevant fields
   b) For RUNELITE_DIR=, set the actual path to your .runelite/repository2 
   c) Change the path after -XX:ErrorFile= to the path to your .runelite/logs/jvm_crash_pid_%p.log location
+  d) Also, verify the Runelite version and your path to your jvm, and update those accordingly. If you know what you're doing, you can modify the various other java arguments.
 
 5) Save your script and make it executable, such as with:
    ```
