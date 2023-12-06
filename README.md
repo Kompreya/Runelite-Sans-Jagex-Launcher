@@ -2,7 +2,7 @@
 Some Linux scripts to launch Runelite without needing to open and launch through Jagex Launcher. This lets you create a simple .desktop shortcut for example that will launch Runelite directly with your Jagex login creds.
 
 ## Notes: 
-1) This process still requires you to somehow get your OSRS login credentials through the Jagex Launcher or similar process. 
+1) This process still requires you to somehow login to your Jagex account using your login credentials through the Jagex Launcher or similar process. 
 The simplest way is to install and login through the Jagex Launcher flatpak, Lutris, or Bolt.
 
 2) Once you login via the Jagex Launcher once and obtain your creds, you will not need to open it again for 30 days, after which your session ID expires and will need to retrieve the new credentials by launching the Jagex Launcher again.
