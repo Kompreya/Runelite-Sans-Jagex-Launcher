@@ -9,6 +9,8 @@ The simplest way is to install and login through the Jagex Launcher flatpak, Lut
 
 3) TODO: Automate the session refresh process, in a secure fashion. I'm looking into a way to launch the jagex launcher, grab and store the creds in a secure fashion, and in a manner that the runelite launch script can reference. This will be so I don't need to rerun this process every 30 days.
 
+4) If you have multiple OSRS characters, you will need to create a unique script per character. If so, be sure to name your scripts in a memorable way so you know which character you're launching Runelite for.
+
 Warning: Before you proceed, please note that the credentials you are obtaining via these commands are sensitive. Do NOT share them with anyone else, and take precautions to ensure these credentials are secure on your system. The steps and scripts I am providing to you will not expose these creds to anyone but you.
 
 ## How To:
