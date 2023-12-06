@@ -11,6 +11,8 @@ The simplest way is to install and login through the Jagex Launcher flatpak, Lut
 
 Warning: Before you proceed, please note that the credentials you are obtaining via these commands are sensitive. Do NOT share them with anyone else, and take precautions to ensure these credentials are secure on your system. The steps and scripts I am providing to you will not expose these creds to anyone but you.
 
+## How To:
+
 1) Install, open and login into the Jagex Launcher. Choose your character and launch Runelite. You don't need to actually log into your Runescape character at this point.
 
 2) In terminal, get the PID for Runelite, such as
