@@ -2,16 +2,18 @@
 Some Linux scripts to launch Runelite without needing to open and launch through Jagex Launcher. This lets you create a simple .desktop shortcut for example that will launch Runelite directly with your Jagex login creds.
 
 ## Notes: 
-1) This process still requires you to somehow login to your Jagex account using your login credentials through the Jagex Launcher or similar process. 
+1) This process still requires you to initially somehow login to your Jagex account using your login credentials through the Jagex Launcher or similar process. 
 The simplest way is to install and login through the Jagex Launcher flatpak, Lutris, or Bolt.
 
-2) Once you login via the Jagex Launcher once and obtain your creds, you will not need to open it again for 30 days, after which your session ID expires and will need to retrieve the new credentials by launching the Jagex Launcher again.
+2) Once you login via the Jagex Launcher once and obtain your creds, you will not need to open it again, even after 30 days when the launcher's session would normally expire. This is because the session token for Runelite does not expire, and is all that is required to login to your OSRS account. You should note that this means if you need to invalidate your session token for any reason, you need to do so through the official website.
 
-3) TODO: Automate the session refresh process, in a secure fashion. I'm looking into a way to launch the jagex launcher, grab and store the creds in a secure fashion, and in a manner that the runelite launch script can reference. This will be so I don't need to rerun this process every 30 days.
+4) This method should work on Windows and Mac. Mac supports bash scripting natively, so the process should be similar. Windows does not have native bash script support, but you should be able to do this with powershell or .bat files. Adopt this method accordingly.
 
-4) If you have multiple OSRS characters, you will need to create a unique script per character. If so, be sure to name your scripts in a memorable way so you know which character you're launching Runelite for.
+5) TODO: Store the login creds in a secure fashion. Generally speaking, it is not advisable to store these creds in a file. However, as long as no one has access to your system, then no one will gain access to your account. Regardless, I would feel better if I stored the creds as a secret environment variable or in a vault.
 
-Warning: Before you proceed, please note that the credentials you are obtaining via these commands are sensitive. Do NOT share them with anyone else, and take precautions to ensure these credentials are secure on your system. The steps and scripts I am providing to you will not expose these creds to anyone but you.
+6) If you have multiple OSRS characters, you will need to create a unique script per character. If so, be sure to name your scripts in a memorable way so you know which character you're launching Runelite for.
+
+Warning: Before you proceed, please note that the credentials you are obtaining via these commands are sensitive. Do NOT share them with anyone else, and take precautions to ensure these credentials are secure on your system. The steps and scripts I am providing to you will not expose these creds to anyone but you. Yo are responsible for the security of your account, and only use this method if you are confident of your system's security measures.
 
 ## How To:
 
